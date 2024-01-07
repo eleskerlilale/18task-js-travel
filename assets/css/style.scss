@@ -1,0 +1,233 @@
+*{
+    font-family: 'Quicksand', sans-serif;
+}
+ul{
+    list-style-type: none;
+}
+a{
+    text-decoration: none;
+}
+nav{
+    background-color: black;
+    .nav{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        color: white;
+        .image{
+            width: 150px;
+            img{
+                width: 100%;
+            }
+        }
+        ul{
+            // padding-top: 10px;
+            display: flex;
+            justify-content: center;
+
+            align-items: center;
+            gap: 20px;
+            li{
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                justify-content: center;
+            }
+        }
+        .menu-icon{
+            display: none;
+        }
+    }
+}
+#banner{
+    background-image: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRDWoFgyWNREcgZ4lcNSenh00HFO4Pw99E-dw&usqp=CAU");
+    background-position: center;
+    background-repeat: repeat;
+    background-size: cover;
+    .banner{
+        color: white;
+        padding:200PX 0;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap: 20px;
+        h1{
+            font-size: 40px;
+        }
+        a{
+            width: 200px;
+            padding: 10px;
+            text-align: center;
+            border: 1px solid white;
+            color: white;
+        }
+    }
+}
+#banner-footer{
+    .banner-footer{
+        .row{
+            >div{
+                padding: 20px;
+                .card{
+                    border: none;
+                    display: flex;
+                    flex-direction: column;
+                    align-items: center;
+                    justify-content: center;
+                    text-align: center;
+                    .image{
+                        max-width: 80px;
+                        img{
+                            width: 100%;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+#navagio{
+    .navagio{
+        padding-top: 50px;
+        display: flex;
+        justify-content:space-between;
+        align-items: center;
+        .text{
+            padding: 30px;
+            width: 50%;
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
+            gap: 10px;
+            h2{
+                font-size: 30px;
+                font-weight: bold;
+            }
+            P{
+                color: gray;
+            }
+        }
+        .image{
+            width: 50%;
+            img{
+                width: 100%;
+            }
+        }
+    }
+}
+#paris{
+    .paris{
+        padding-bottom: 50px;
+        display: flex;
+        justify-content:space-between;
+        align-items: center;
+        .text{
+            padding: 30px;
+            width: 50%;
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
+            gap: 10px;
+            h2{
+                font-size: 30px;
+                font-weight: bold;
+            }
+            P{
+                color: gray;
+            }
+        }
+        .image{
+            width: 50%;
+            img{
+                width: 100%;
+            }
+        }
+    }
+}
+#popular{
+    .popular{
+        padding: 50px 0;
+        display:flex ;
+        flex-direction: column;
+        align-items: center;
+        gap: 20px;
+        .header{
+            h2, p{
+                text-align: center;
+            }
+        }
+        .popular-footer{
+            .row{
+                >div{
+                    margin-bottom: 20px;
+                    .card{
+                        border: none;
+                        position: relative;
+                        width: 100%;
+                        height: 100%;
+                        cursor: pointer;
+                        .text{
+                            position: absolute;
+                            width: 100%;
+                            height: 100%;
+                            top: 0;
+                            left: 0;
+                            background-color: rgba(6, 6, 255, 0.432);
+                            z-index: 100;
+                            display: flex;
+                            flex-direction: column;
+                            align-items: center;
+                            justify-content: center;
+                            opacity: 0;
+                            transition: all .3s ease;
+                            color: white;
+                            font-size: 20px;
+                            font-weight: bold;                            
+                        }
+                        &:hover .text{
+                            opacity: 1;
+                        }
+                        .image{
+                            width: 100%;
+                            img{
+                                width: 100%;
+                            }
+                            
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+#discover{
+    background-image:linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)), url("https://demo.kaliumtheme.com/travel/wp-content/uploads/2017/06/amsterdam-1.jpg?id=553");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size:cover ;
+    background-attachment: fixed;
+    .discover{
+        padding: 60px 0;
+        display: flex;
+        flex-direction: column;
+        h2{
+            text-align: center;
+            color: white;
+            line-height: 2;
+        }
+        p{
+            text-align: center;
+            color: white;
+            line-height: 0.5;
+            font-size: 15px;
+        }
+    }
+}
+#find{
+    background-color: #FBCE00;
+    .find{
+        padding: 50px;
+        display: ;
+    }
+}
