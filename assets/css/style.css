@@ -10,46 +10,53 @@ a {
   text-decoration: none;
 }
 
-nav {
-  background-color: black;
+#nav {
+  background-color: rgba(0, 0, 0, 0.496);
+  width: 100%;
+  position: fixed;
+  z-index: 100;
 }
-nav .nav {
+#nav .nav {
+  padding: 15px 0;
   display: flex;
   justify-content: space-between;
   align-items: center;
   color: white;
 }
-nav .nav .image {
+#nav .nav .image {
   width: 150px;
+  cursor: pointer;
 }
-nav .nav .image img {
+#nav .nav .image img {
   width: 100%;
 }
-nav .nav ul {
+#nav .nav ul {
+  padding-top: 13px;
   display: flex;
   justify-content: center;
   align-items: center;
   gap: 20px;
 }
-nav .nav ul li {
+#nav .nav ul li {
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
+  cursor: pointer;
 }
-nav .nav .menu-icon {
+#nav .nav .menu-icon {
   display: none;
 }
 
 #banner {
-  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRDWoFgyWNREcgZ4lcNSenh00HFO4Pw99E-dw&usqp=CAU");
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("https://www.cuddlynest.com/blog/wp-content/uploads/2022/04/rome-1-day-itinerary-scaled.jpg");
   background-position: center;
   background-repeat: repeat;
   background-size: cover;
 }
 #banner .banner {
   color: white;
-  padding: 200PX 0;
+  padding: 250PX 0;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -57,7 +64,9 @@ nav .nav .menu-icon {
   gap: 20px;
 }
 #banner .banner h1 {
-  font-size: 40px;
+  text-align: center;
+  font-size: 60px;
+  max-width: 500px;
 }
 #banner .banner a {
   width: 200px;
@@ -65,6 +74,11 @@ nav .nav .menu-icon {
   text-align: center;
   border: 1px solid white;
   color: white;
+  transition: all 0.3s ease;
+}
+#banner .banner a:hover {
+  background-color: white;
+  color: black;
 }
 
 #banner-footer .banner-footer .row > div {
@@ -80,11 +94,15 @@ nav .nav .menu-icon {
 }
 #banner-footer .banner-footer .row > div .card .image {
   max-width: 80px;
+  padding-bottom: 10px;
 }
 #banner-footer .banner-footer .row > div .card .image img {
   width: 100%;
 }
 
+#navagio {
+  background-color: #F2F2F2;
+}
 #navagio .navagio {
   padding-top: 50px;
   display: flex;
@@ -113,6 +131,9 @@ nav .nav .menu-icon {
   width: 100%;
 }
 
+#paris {
+  background-color: #F2F2F2;
+}
 #paris .paris {
   padding-bottom: 50px;
   display: flex;
@@ -218,4 +239,191 @@ nav .nav .menu-icon {
 }
 #find .find {
   padding: 50px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  align-items: flex-start;
+}
+#find .find h2 {
+  color: #003580;
+  font-size: 19px;
+}
+#find .find .input-first, #find .find .data-input, #find .find .find-search {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  justify-content: space-between;
+}
+#find .find .input-first {
+  height: 50px;
+  width: 100%;
+}
+#find .find .input-first .icon {
+  height: 100%;
+  text-align: end;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  background-color: white;
+  color: gray;
+  width: 30px;
+}
+#find .find .input-first input {
+  height: 100%;
+  border: none;
+  outline: none;
+  padding-left: 20px;
+  width: 100%;
+}
+#find .find .data-input {
+  width: 100%;
+}
+#find .find .data-input > div {
+  background-color: white;
+  width: 47%;
+  height: 50px;
+  color: #003580;
+  padding-left: 10px;
+}
+#find .find .data-input > div span {
+  font-size: 12px;
+}
+#find .find .data-input > div p {
+  font-size: 15px;
+  font-weight: bold;
+}
+#find .find .find-search {
+  width: 100%;
+}
+#find .find .find-search .button-search {
+  width: 100px;
+  height: 40px;
+  border-radius: 10px;
+  background-color: #003580;
+  color: white;
+  font-weight: bold;
+  text-align: center;
+  padding-top: 8px;
+}
+
+#news {
+  background-color: #F2F2F2;
+}
+#news .news {
+  padding: 30px 0;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+#news .news .row > div {
+  padding: 0 35px;
+}
+#news .news .row > div .card {
+  transition: all 0.3s ease;
+  border: none;
+  overflow: hidden;
+}
+#news .news .row > div .card .image {
+  width: 100%;
+  cursor: pointer;
+  overflow: hidden;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+#news .news .row > div .card .image .icon {
+  position: absolute;
+  width: 90%;
+  height: 90%;
+  background-color: rgba(0, 53, 128, 0.5254901961);
+  color: white;
+  font-size: 30px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  opacity: 0;
+  transition: all 0.3s ease;
+}
+#news .news .row > div .card .image:hover .icon {
+  opacity: 1;
+}
+#news .news .row > div .card .image img {
+  width: 100%;
+}
+#news .news .row > div .card .text {
+  padding: 20px 20px 10px 20px;
+}
+#news .news .row > div .card .text p {
+  font-size: 20px;
+  font-weight: 500;
+  color: black;
+}
+#news .news .row > div .card:hover {
+  box-shadow: 0 0 20px 1px rgb(196, 196, 196);
+}
+#news .news .row > div .card .button {
+  padding-bottom: 20px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+  width: 60%;
+}
+#news .news .row > div .card .button a, #news .news .row > div .card .button .delete {
+  padding: 5px 0;
+  font-size: 16px;
+  text-align: center;
+  width: 100%;
+  transition: all 0.3 ease;
+  border: 1px solid #FBCE00;
+  color: #FBCE00;
+  cursor: pointer;
+}
+#news .news .row > div .card .button a:hover, #news .news .row > div .card .button .delete:hover {
+  background-color: #FBCE00;
+  color: white;
+}
+#news .news .row > div .card .button .bi {
+  cursor: pointer;
+  border: none;
+}
+
+footer .top-footer {
+  padding: 50px 0;
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+}
+footer .top-footer > div {
+  line-height: 0.8;
+}
+footer .top-footer > div p {
+  font-size: 15px;
+  font-weight: 500;
+  padding-bottom: 5px;
+  cursor: pointer;
+}
+footer .top-footer > div p:first-child {
+  margin-bottom: 25px;
+}
+footer .bottom-footer {
+  padding: 0 0 20px 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+footer .bottom-footer .icon {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  align-items: center;
+}
+footer .bottom-footer .icon .bi-facebook, footer .bottom-footer .icon .bi-twitter-x {
+  color: blue;
+}
+footer .bottom-footer .icon .bi-youtube {
+  color: red;
 }/*# sourceMappingURL=style.css.map */

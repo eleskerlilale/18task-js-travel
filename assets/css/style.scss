@@ -7,21 +7,26 @@ ul{
 a{
     text-decoration: none;
 }
-nav{
-    background-color: black;
+#nav{
+    background-color: rgba(0, 0, 0, 0.496);
+    width: 100%;
+    position: fixed;
+    z-index: 100;
     .nav{
+        padding: 15px 0;
         display: flex;
         justify-content: space-between;
         align-items: center;
         color: white;
         .image{
             width: 150px;
+            cursor: pointer;
             img{
                 width: 100%;
             }
         }
         ul{
-            // padding-top: 10px;
+            padding-top: 13px;
             display: flex;
             justify-content: center;
 
@@ -32,6 +37,7 @@ nav{
                 flex-direction: column;
                 align-items: center;
                 justify-content: center;
+                cursor: pointer;
             }
         }
         .menu-icon{
@@ -40,20 +46,22 @@ nav{
     }
 }
 #banner{
-    background-image: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRDWoFgyWNREcgZ4lcNSenh00HFO4Pw99E-dw&usqp=CAU");
+    background-image: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url("https://www.cuddlynest.com/blog/wp-content/uploads/2022/04/rome-1-day-itinerary-scaled.jpg");
     background-position: center;
     background-repeat: repeat;
     background-size: cover;
     .banner{
         color: white;
-        padding:200PX 0;
+        padding:250PX 0;
         display: flex;
         flex-direction: column;
         align-items: center;
         justify-content: center;
         gap: 20px;
         h1{
-            font-size: 40px;
+            text-align: center;
+            font-size: 60px;
+            max-width: 500px;
         }
         a{
             width: 200px;
@@ -61,6 +69,11 @@ nav{
             text-align: center;
             border: 1px solid white;
             color: white;
+            transition: all .3s ease;
+            &:hover{
+                background-color: white;
+                color: black;
+            }
         }
     }
 }
@@ -78,6 +91,7 @@ nav{
                     text-align: center;
                     .image{
                         max-width: 80px;
+                        padding-bottom: 10px;
                         img{
                             width: 100%;
                         }
@@ -88,6 +102,7 @@ nav{
     }
 }
 #navagio{
+    background-color: #F2F2F2;
     .navagio{
         padding-top: 50px;
         display: flex;
@@ -117,6 +132,7 @@ nav{
     }
 }
 #paris{
+    background-color: #F2F2F2;
     .paris{
         padding-bottom: 50px;
         display: flex;
@@ -228,6 +244,196 @@ nav{
     background-color: #FBCE00;
     .find{
         padding: 50px;
-        display: ;
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+        align-items: flex-start;
+        h2{
+            color: #003580;
+            font-size: 19px;
+        }
+        .input-first, .data-input, .find-search{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            justify-content: space-between;
+        }
+        .input-first{
+            height: 50px;
+            width: 100%;
+            .icon{
+                height: 100%;
+                text-align: end;
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                background-color: white;
+                color: gray;
+                width: 30px;
+            }
+            input{
+                height: 100%;
+                border: none;
+                outline: none;
+                padding-left: 20px;
+                width: 100%;
+            }
+        }
+        .data-input{
+            width: 100%;
+            >div{
+                background-color: white;
+                width: 47%;
+                height: 50px;
+                color: #003580;
+                padding-left: 10px;
+                span{
+                    font-size: 12px;
+                }
+                p{
+                    font-size: 15px;
+                    font-weight: bold;
+                }
+            }
+        }
+        .find-search{
+            width: 100%;
+            .button-search{
+                width: 100px;
+                height: 40px;
+                border-radius: 10px;
+                background-color: #003580;
+                color: white;
+                font-weight: bold;
+                text-align: center;
+                padding-top: 8px;
+            }
+        }
+    }
+}
+#news{
+    background-color: #F2F2F2;
+    .news{
+        padding: 30px 0;
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+        .row{
+            >div{
+                padding: 0 35px;
+                .card{
+                    transition: all .3s ease;
+                    border: none;
+                    overflow: hidden;
+                    .image{
+                        width: 100%;
+                        cursor: pointer;
+                        overflow:hidden;
+                        position: relative;
+                        display: flex;
+                        flex-direction: column;
+                        align-items: center;
+                        justify-content: center;
+                        .icon{
+                            position: absolute;
+                            width: 90%;
+                            height: 90%;
+                            background-color: #00358086;
+                            color: white;
+                            font-size: 30px;
+                            display: flex;
+                            flex-direction: column;
+                            align-items: center;
+                            justify-content: center;
+                            opacity: 0;
+                        transition: all .3s ease;
+                    }
+                        &:hover .icon{
+                            opacity: 1;
+                        }
+                        img{
+                            width: 100%;
+                        }
+                    }
+                    .text{
+                        padding: 20px 20px 10px 20px;
+                        p{
+                            font-size: 20px;
+                            font-weight: 500;
+                            color: black;
+                        }
+                    }
+                    &:hover{
+                        box-shadow: 0 0 20px 1px rgb(196, 196, 196);
+                    }
+                    .button{
+                        padding-bottom: 20px;
+                        margin: 0 auto;
+                        display: flex;
+                        flex-direction: column;
+                        align-items: center;
+                        gap: 10px;
+                        width: 60%;
+                        
+                        a, .delete{
+                            padding: 5px 0;
+                            font-size: 16px;
+                            text-align: center;
+                            width: 100%;
+                            transition: all .3 ease;
+                            border: 1px solid #FBCE00;
+                            color: #FBCE00;
+                            cursor: pointer;
+                            &:hover{
+                             background-color: #FBCE00;
+                             color: white;
+                            }
+                        }
+                        .bi{
+                            cursor: pointer;
+                            border: none;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+footer{
+    .top-footer{
+        padding: 50px 0;
+        display: grid;
+        grid-template-columns: repeat(5,1fr);
+        >div{
+            line-height: 0.8;
+            p{
+                font-size: 15px;
+                font-weight: 500;
+                padding-bottom:5px;
+                cursor: pointer;
+                &:first-child{
+                    margin-bottom: 25px;
+                }
+            }
+            
+        }
+    }
+    .bottom-footer{
+        padding: 0 0 20px 0;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        .icon{
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+            align-items: center;
+            .bi-facebook, .bi-twitter-x{
+                color: blue;
+            }
+            .bi-youtube{
+                color: red;
+            }
+        }
     }
 }
