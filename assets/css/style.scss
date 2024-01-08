@@ -397,6 +397,38 @@ a{
                 }
             }
         }
+        .add-fav{
+            display: flex;
+            gap: 10px;
+            a{
+            width: 40px;
+            height: 40px;
+            background-color: #003580;
+            color: white;
+            font-size: 13px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content:center ;
+            border-radius: 50%;
+            cursor: pointer;
+            }
+        }
+        input{
+            max-width: 500px;
+        }
+        .load-more{
+            background-color: #003580;
+            text-align: center;
+            margin: 0 auto;
+            width: 130px;
+            coloR:WHITE;
+            padding: 8px 0;
+            cursor: pointer;
+            &:hover{
+                background-color: #003e96;
+            }
+        }
     }
 }
 footer{

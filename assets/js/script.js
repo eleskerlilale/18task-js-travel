@@ -1,9 +1,10 @@
-const newsRow=document.querySelector(".news-row")
+const newsRow=document.querySelector(".news-row");
+const loadMore=document.querySelector(".load-more")
+let page=1
 function item(){
-    axios.get(`http://localhost:3000/data/`)
+    axios.get(`http://localhost:3000/data?_page=${page}&_limit=3`)
     .then(res => res.data)
     .then(data => {
-        console.log(data)
         axios.get("http://localhost:3000/favorite/")
         .then(res => res.data)
         .then(datafav => {
@@ -26,8 +27,8 @@ function item(){
                             <div class="favorite fav${element.id}" onclick="favFunc(${element.id})">
                                 <i class="bi bi-heart"></i>
                             </div>
-                            <a href="./detail.html">Details</a>
-                            <a href="./add.html">Update</a>
+                            <a href="./detail.html?id=${element.id}">Details</a>
+                            <a href="./add.html?id=${element.id}">Update</a>
                             <div class="delete" onclick="deleteFunc(${element.id})">Delete</div>
                         </div>
                     </div>
@@ -49,8 +50,8 @@ function item(){
                             <div class="favorite fav${element.id}" onclick="favFunc(${element.id})">
                                 <i class="bi bi-heart-fill"></i>
                             </div>
-                            <a href="./detail.html">Details</a>
-                            <a href="./add.html">Update</a>
+                            <a href="./detail.html?id=${element.id}">Details</a>
+                            <a href="./add.html?id=${element.id}">Update</a>
                             <div class="delete" onclick="deleteFunc(${element.id})">Delete</div>
                         </div>
                     </div>
@@ -67,6 +68,11 @@ function deleteFunc(id){
     window.location.reload()
 }
 
+loadMore.addEventListener("click", () => {
+    page++
+    item()
+    axios.get("")
+})
 function favFunc(id){
     const fav=document.querySelector(`.fav${id}`)
     axios.get(`http://localhost:3000/data/`+id)

@@ -6,9 +6,9 @@
       "name": "Discovering civilizations of the Middle East"
     },
     {
-      "id": 2,
       "image": "https://demo.kaliumtheme.com/travel/wp-content/uploads/2017/06/dubrovnik-1-400x250.jpg",
-      "name": "Walking through ancient walls of Dubrovnik"
+      "name": "Walking through ancient walls of Dubrovniksssss",
+      "id": 2
     },
     {
       "id": 3,
@@ -16,5 +16,11 @@
       "name": "Crystal clear water of the Mediterranean"
     }
   ],
-  "favorite": []
+  "favorite": [
+    {
+      "image": "https://demo.kaliumtheme.com/travel/wp-content/uploads/2017/06/dubrovnik-1-400x250.jpg",
+      "name": "Walking through ancient walls of Dubrovniksssss",
+      "id": 2
+    }
+  ]
 }

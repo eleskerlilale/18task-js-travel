@@ -1,4 +1,5 @@
 const id=new URLSearchParams(window.location.search).get("id")
+console.log(id)
 const newsRow=document.querySelector(".news-row")
 axios.get("http://localhost:3000/data/"+id)
         .then(res => res.data)
