@@ -10,6 +10,53 @@ a {
   text-decoration: none;
 }
 
+.menu-list {
+  background-color: rgba(0, 0, 255, 0.563);
+  display: flex;
+  justify-content: space-between;
+  height: 100vh;
+  width: 100%;
+  padding: 20px 60px 20px 20px;
+  color: #ffffff;
+  font-size: 20px;
+  display: none;
+}
+.menu-list .x {
+  cursor: pointer;
+  font-size: 30px;
+}
+.menu-list i {
+  font-size: 15px;
+}
+.menu-list li {
+  transition: all 0.3s ease;
+}
+.menu-list li:hover {
+  color: #FBCE00;
+}
+.menu-list > ul li {
+  cursor: pointer;
+}
+.menu-list > ul .sub {
+  padding: 0;
+  height: 30px;
+  overflow: hidden;
+  transition: all 0.3 ease;
+  position: relative;
+}
+.menu-list > ul .sub:hover {
+  height: 120px;
+}
+.menu-list > ul .subnav {
+  color: white;
+  position: absolute;
+  top: 25px;
+  left: 20px;
+  transition: all 0.3 ease;
+  padding: 0;
+  margin-top: 0;
+}
+
 #nav {
   background-color: rgba(0, 0, 0, 0.496);
   width: 100%;
@@ -111,7 +158,6 @@ a {
 }
 #navagio .navagio .text {
   padding: 30px;
-  width: 50%;
   display: flex;
   flex-direction: column;
   align-items: flex-start;
@@ -125,9 +171,11 @@ a {
   color: gray;
 }
 #navagio .navagio .image {
-  width: 50%;
+  height: 100%;
+  width: 100%;
 }
 #navagio .navagio .image img {
+  height: 100%;
   width: 100%;
 }
 
@@ -142,7 +190,6 @@ a {
 }
 #paris .paris .text {
   padding: 30px;
-  width: 50%;
   display: flex;
   flex-direction: column;
   align-items: flex-start;
@@ -156,9 +203,11 @@ a {
   color: gray;
 }
 #paris .paris .image {
-  width: 50%;
+  height: 100%;
+  width: 100%;
 }
 #paris .paris .image img {
+  height: 100%;
   width: 100%;
 }
 
@@ -250,7 +299,6 @@ a {
 }
 #find .find .input-first, #find .find .data-input, #find .find .find-search {
   display: flex;
-  justify-content: center;
   align-items: center;
   justify-content: space-between;
 }
@@ -316,7 +364,7 @@ a {
   gap: 20px;
 }
 #news .news .row > div {
-  padding: 0 35px;
+  padding: 0 35px 20px 35px;
 }
 #news .news .row > div .card {
   transition: all 0.3s ease;
@@ -391,6 +439,10 @@ a {
   cursor: pointer;
   border: none;
 }
+#news .news select {
+  max-width: 100px;
+  padding: 10px;
+}
 #news .news .add-fav {
   display: flex;
   gap: 10px;
@@ -408,8 +460,23 @@ a {
   border-radius: 50%;
   cursor: pointer;
 }
+#news .news .add-fav > div {
+  position: relative;
+}
+#news .news .add-fav > div span {
+  position: absolute;
+  top: -10px;
+  right: -10px;
+  width: 30px;
+  background-color: #ffff00;
+  color: #003580;
+  text-align: center;
+  padding-top: 2px;
+  border-radius: 50%;
+}
 #news .news input {
   max-width: 500px;
+  padding: 8px;
 }
 #news .news .load-more {
   background-color: #003580;
@@ -458,4 +525,41 @@ footer .bottom-footer .icon .bi-facebook, footer .bottom-footer .icon .bi-twitte
 }
 footer .bottom-footer .icon .bi-youtube {
   color: red;
+}
+
+@media screen and (max-width: 992px) {
+  #nav .nav ul {
+    display: NONE;
+  }
+  #nav .nav .menu-icon {
+    display: block;
+    font-size: 30px;
+    cursor: pointer;
+  }
+}
+@media screen and (max-width: 768px) {
+  #banner .banner span {
+    font-size: 15px;
+  }
+  #banner .banner h1 {
+    font-size: 40px;
+  }
+  footer .top-footer {
+    display: none;
+  }
+  footer .bottom-footer {
+    padding-top: 30px;
+  }
+  footer .bottom-footer p {
+    font-size: 14px;
+  }
+}
+@media screen and (max-width: 425px) {
+  #find .find .find-search {
+    flex-direction: column;
+    gap: 20px;
+  }
+  #find .find .find-search .button-search {
+    width: 100%;
+  }
 }/*# sourceMappingURL=style.css.map */

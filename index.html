@@ -13,6 +13,23 @@
     <link rel="stylesheet" href="./assets/css/style.css">
 </head>
 <body>
+    <div class="menu-list">        
+        <ul>
+            <li>Destinations</li>
+            <li>Tours</li>
+            <li>News</li>
+            <li class="sub"><p>Tickets <i class="bi bi-chevron-down"></i></p>
+                <ul class="subnav">
+                    <li>Buses</li>
+                    <li>Flights</li>
+                    <li>Cruises</li>
+                </ul>
+            </li>
+            <li>Bookings</li>
+            <li>Buy Now!</li>
+        </ul>
+        <div class="x">X</div>
+    </div>
     <section id='nav'>
         <div class="container">
             <div class="nav">
@@ -100,28 +117,43 @@
     </section>
     <section id="navagio">
             <div class="navagio">
-                <div class="text">
-                    <h2>Navagio, Greece</h2>
-                    <h2>Chosen as the beach of the year.</h2>
-                    <p>Enclosed by cliffs and facing out over azure waters, Navagio Beach in Greece is so picturesque it even comes with its own shipwreck.</p>
-                    <p>The strip of beach is accessed only by boat. Regular tours to the beach depart from Porto Vromi to the south, and from Agios Nikolaos and Cape Skinari to the north-east. Boats also arrive from the harbour of Zakynthos city.</p>
+                <div class="row">
+                    <div class="col-md-6 col-sm-12">
+                        <div class="text">
+                            <h2>Navagio, Greece</h2>
+                            <h2>Chosen as the beach of the year.</h2>
+                            <p>Enclosed by cliffs and facing out over azure waters, Navagio Beach in Greece is so picturesque it even comes with its own shipwreck.</p>
+                            <p>The strip of beach is accessed only by boat. Regular tours to the beach depart from Porto Vromi to the south, and from Agios Nikolaos and Cape Skinari to the north-east. Boats also arrive from the harbour of Zakynthos city.</p>
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="image">
+                            <img src="https://demo.kaliumtheme.com/travel/wp-content/uploads/2017/06/sicily-1024x683.jpg" alt="">
+                        </div>
+                    </div>
                 </div>
-                <div class="image">
-                    <img src="https://demo.kaliumtheme.com/travel/wp-content/uploads/2017/06/sicily-1024x683.jpg" alt="">
-                </div>
+                
+                
             </div>
     </section>
     <section id="paris">
             <div class="paris">
-                <div class="image">
-                    <img src="https://demo.kaliumtheme.com/travel/wp-content/uploads/2022/02/paris-1024x735.jpg" alt="">
+                <div class="row">
+                    <div class="col-md-6">
+                        <div class="image">
+                            <img src="https://demo.kaliumtheme.com/travel/wp-content/uploads/2022/02/paris-1024x735.jpg" alt="">
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="text">
+                            <h2>Magnificent Paris</h2>
+                            <h2>Our all time favorite city.</h2>
+                            <p>Paris can be seen as the most interesting city of Europe and probably even as one of the most amazing city’s worldwide. People from all over the world travel to Paris to discover and experience this fairy-like city.</p>
+                            <p>Paris is the city of love, inspiration, art and fashion. The night scene, the Eiffel tower and the warm atmosphere will make you feel directly at home. Paris has a lot of interesting architecture and museums to offer, and is also a Walhalla for shopaholics.</p>
+                        </div>
+                    </div>
                 </div>
-                <div class="text">
-                    <h2>Magnificent Paris</h2>
-                    <h2>Our all time favorite city.</h2>
-                    <p>Paris can be seen as the most interesting city of Europe and probably even as one of the most amazing city’s worldwide. People from all over the world travel to Paris to discover and experience this fairy-like city.</p>
-                    <p>Paris is the city of love, inspiration, art and fashion. The night scene, the Eiffel tower and the warm atmosphere will make you feel directly at home. Paris has a lot of interesting architecture and museums to offer, and is also a Walhalla for shopaholics.</p>
-                </div>
+               
             </div>
     </section>
     <section id="popular">
@@ -259,9 +291,20 @@
                 </div>
                 <div class="add-fav">
                     <a href="./add.html">+</a>
-                    <a href="./favorite.html"><i class="bi bi-heart-fill"></i></a>
+                    <div>
+                        <a href="./favorite.html"><i class="bi bi-heart-fill"></i></a>
+                        <span class="count"></span>
+                    </div>
+                    
                 </div>
-                <input type="text" placeholder="Name">
+                <div>
+                    <input type="text" placeholder="Name">
+                    <select>
+                        <option value="def">Default</option>
+                        <option value="a">A-Z</option>
+                        <option value="z">Z-A</option>
+                    </select>
+                </div>
                 <div class="row news-row">
                 </div>
                 <div class="load-more">
