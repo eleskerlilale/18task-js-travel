@@ -55,6 +55,24 @@ a{
         }
     }
 }
+.scroll{
+    z-index: 100;
+    position: fixed;
+    bottom: 30px;
+    right: 30px;
+    width: 50px;
+    height: 50px;
+    font-weight: bold;
+    background-color: #003580;
+    color: white;
+    cursor: pointer;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    display: none;
+}
 #nav{
     background-color: rgba(0, 0, 0, 0.496);
     width: 100%;
@@ -100,12 +118,18 @@ a{
     background-size: cover;
     .banner{
         color: white;
-        padding:250PX 0;
+        padding:120PX 0;
         display: flex;
         flex-direction: column;
         align-items: center;
         justify-content: center;
         gap: 20px;
+        div{
+            width: 1px;
+            height: 100px;
+            background-color: white;
+
+        }
         h1{
             text-align: center;
             font-size: 60px;
@@ -152,13 +176,16 @@ a{
 #navagio{
     background-color: #F2F2F2;
     .navagio{
-        padding-top: 50px;
         display: flex;
         justify-content:space-between;
         align-items: center;
+        .row{
+            >div{
+                padding: 0 12px 0 0 ;
+            }
+        }
         .text{
             padding: 30px;
-            // width: 50%;
             display: flex;
             flex-direction: column;
             align-items: flex-start;
@@ -184,10 +211,14 @@ a{
 #paris{
     background-color: #F2F2F2;
     .paris{
-        padding-bottom: 50px;
         display: flex;
         justify-content:space-between;
         align-items: center;
+        .row{
+            >div{
+                padding: 0;
+            }
+        }
         .text{
             padding: 30px;
             display: flex;
@@ -370,12 +401,14 @@ a{
         gap: 20px;
         .row{
             >div{
-                padding: 0 35px 20px 35px;
+                // height: 500px;
+                padding: 10px 10px;
                 .card{
                     transition: all .3s ease;
                     border: none;
                     overflow: hidden;
                     .image{
+                       height: 250px;
                         width: 100%;
                         cursor: pointer;
                         overflow:hidden;
@@ -403,9 +436,11 @@ a{
                         }
                         img{
                             width: 100%;
+                            height: 100%;
                         }
                     }
                     .text{
+                        
                         padding: 20px 20px 10px 20px;
                         p{
                             font-size: 20px;
@@ -424,7 +459,16 @@ a{
                         align-items: center;
                         gap: 10px;
                         width: 60%;
-                        
+                        .fav-bas{
+                            display: flex;
+                            align-items: center;
+                            gap: 20px;
+                            justify-content: center;
+                            .basket{
+                                padding: 2px 5px;
+                                border-radius: 50%;
+                            }
+                        }
                         a, .delete{
                             padding: 5px 0;
                             font-size: 16px;
@@ -560,6 +604,24 @@ footer{
             }
             h1{
                 font-size: 40px;
+            }
+        }
+    }
+    #navagio{
+        .navagio{
+            .row{
+                >div{
+                    padding: 0 12px;
+                }
+            }
+        }
+    }
+    #paris{
+        .paris{
+            .row{
+                >div{
+                    padding: 0 12px;
+                }
             }
         }
     }

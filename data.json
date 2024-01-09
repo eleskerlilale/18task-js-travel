@@ -19,6 +19,11 @@
       "id": 4,
       "image": "https://demo.kaliumtheme.com/travel/wp-content/uploads/2017/06/mediterrenean-400x250.jpg",
       "name": "Crystal clear water of the Mediterranean"
+    },
+    {
+      "id": 1,
+      "image": "https://demo.kaliumtheme.com/travel/wp-content/uploads/2017/06/giza-400x250.jpg",
+      "name": "Discovering civilizations of the Middle East"
     }
   ],
   "favorite": [
@@ -31,6 +36,18 @@
       "id": 3,
       "image": "https://demo.kaliumtheme.com/travel/wp-content/uploads/2017/06/mediterrenean-400x250.jpg",
       "name": "Crystal clear water of the Mediterranean"
+    }
+  ],
+  "basket": [
+    {
+      "id": 3,
+      "image": "https://demo.kaliumtheme.com/travel/wp-content/uploads/2017/06/mediterrenean-400x250.jpg",
+      "name": "Crystal clear water of the Mediterranean"
+    },
+    {
+      "id": 1,
+      "image": "https://demo.kaliumtheme.com/travel/wp-content/uploads/2017/06/giza-400x250.jpg",
+      "name": "Discovering civilizations of the Middle East"
     }
   ]
 }
