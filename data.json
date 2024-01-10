@@ -21,7 +21,7 @@
       "name": "Crystal clear water of the Mediterranean"
     },
     {
-      "id": 1,
+      "id": 5,
       "image": "https://demo.kaliumtheme.com/travel/wp-content/uploads/2017/06/giza-400x250.jpg",
       "name": "Discovering civilizations of the Middle East"
     }
@@ -40,14 +40,19 @@
   ],
   "basket": [
     {
-      "id": 3,
-      "image": "https://demo.kaliumtheme.com/travel/wp-content/uploads/2017/06/mediterrenean-400x250.jpg",
-      "name": "Crystal clear water of the Mediterranean"
-    },
-    {
       "id": 1,
       "image": "https://demo.kaliumtheme.com/travel/wp-content/uploads/2017/06/giza-400x250.jpg",
       "name": "Discovering civilizations of the Middle East"
+    },
+    {
+      "id": 5,
+      "image": "https://demo.kaliumtheme.com/travel/wp-content/uploads/2017/06/giza-400x250.jpg",
+      "name": "Discovering civilizations of the Middle East"
+    },
+    {
+      "image": "https://demo.kaliumtheme.com/travel/wp-content/uploads/2017/06/dubrovnik-1-400x250.jpg",
+      "name": "Walking through ancient walls of Dubrovniks",
+      "id": 2
     }
   ]
 }
