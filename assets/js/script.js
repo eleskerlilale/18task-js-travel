@@ -127,6 +127,8 @@ function deleteFunc(id) {
 }
 search.addEventListener("input", () => {
     newsRow.innerHTML = ``
+    newsRow.innerHTML = ``
+
     axios.get(`http://localhost:3000/data/`)
         .then(res => res.data)
         .then(data => {
